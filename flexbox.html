@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Flex Box</title>
+    <style>
+        .wadah_flex {
+            /* menjadi flexibel dengan mengatur properti display dengan nilai flex */
+            display: flex;
+            background-color: rgb(30, 15, 203);
+            flex-direction: column;
+            /* flex-wrap: row wrap;
+            justify-content: space-between; */
+        }
+
+        .wadah_flex > div {
+            background-color: rgb(14, 46, 52);
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <p>Kesimpulan skenario 1 : Fungsi flexbox digunakan untuk mengatur wadah_flex dan elemen-elemen di dalamnya agar sejajar ke kanan. Hal ini dapat dicapai dengan mengatur properti justify-content ke nilai flex-end, sehingga elemen-elemen akan diposisikan ke ujung kanan wadah.</p>
+        <p>Kesimpulan skenario 2 : Dalam CSS, kita bisa menggunakan selector .wadah_flex > div untuk mengatur gaya pada setiap elemen div yang merupakan anak langsung dari elemen dengan kelas wadah_flex. Ini memungkinkan untuk memberikan gaya yang spesifik hanya pada elemen-elemen tersebut.</p>
+        <p>Kesimpulan skenario 3 : Properti flex-direction digunakan untuk mengatur arah urutan pada elemen-elemen yang ada dalam class wadah_flex. Dengan nilai column, elemen-elemen akan disusun secara vertikal dari atas ke bawah, sedangkan nilai row akan menyusunnya secara horizontal dari kiri ke kanan. Penggunaan reverse akan membalik arahnya.</p>
+        <p>Kesimpulan skenario 4 : Saat flex-wrap diatur ke nilai wrap, semua item dalam wadah_flex akan tetap berada dalam satu baris jika ukurannya cukup. Namun, jika ukurannya tidak mencukupi, item-item tersebut akan dipindahkan ke baris baru.</p>
+        <p>Kesimpulan skenario 5 : Dengan mengatur flex-direction ke row dan flex-wrap ke wrap, elemen-elemen flex akan secara default ditempatkan dalam baris. Jika ruang yang tersedia dalam wadah_flex tidak mencukupi untuk menampung semua elemen dalam satu baris, elemen-elemen tersebut akan dipindahkan ke baris berikutnya.</p>
+        <p>Kesimpulan skenario 6 : Properti justify-content digunakan untuk mengatur penempatan elemen-elemen flex dalam sumbu horizontal dalam wadah_flex. Dengan nilai space-between, elemen-elemen akan tersebar secara merata di sepanjang sumbu horizontal, dengan ruang kosong antara elemen-elemen tersebut.</p>
+    </div>
+</body>
+</html>
